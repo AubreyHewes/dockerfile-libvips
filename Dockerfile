@@ -1,4 +1,4 @@
-FROM ubuntu:14.04
+FROM ubuntu:20.04
 MAINTAINER Marc Bachmann <marc.brookman@gmail.com>
 
 ENV LIBVIPS_VERSION_MAJOR 8
