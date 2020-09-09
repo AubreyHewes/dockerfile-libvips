@@ -19,7 +19,7 @@ RUN \
 
   # Build libvips
   cd /tmp && \
-  curl -O http://www.vips.ecs.soton.ac.uk/supported/$LIBVIPS_VERSION_MAJOR.$LIBVIPS_VERSION_MINOR/vips-$LIBVIPS_VERSION.tar.gz && \
+  curl -O https://github.com/libvips/libvips/releases/download/v$LIBVIPS_VERSION/vips-$LIBVIPS_VERSION.tar.gz && \
   tar zvxf vips-$LIBVIPS_VERSION.tar.gz && \
   cd /tmp/vips-$LIBVIPS_VERSION && \
   ./configure --enable-debug=no --without-python $1 && \
